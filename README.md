@@ -11,6 +11,8 @@ This is a project done as part of the Odin project's foundational course.
 - Make your function’s playerSelection parameter case-insensitive (so users can input rock, ROCK, RocK or any other variation).
 Important note: you want to return the results of this function call, not console.log() them. You’re going to use what you return later on, so let’s test this function by using console.log to see the results:
 
+## Sample Output
+ ![SampleOutput](sample_output.png)
 
 ## Authors
 
