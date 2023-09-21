@@ -12,3 +12,11 @@ function getComputerChoice(min, max) {
     console.log(choice)
 }
 console.log(getComputerChoice(1,3));
+let computerSelection = getComputerChoice(1,3);
+let playerSelection = prompt("Please enter your choice from either Rock, Scissors or Paper")
+playerSelection = playerSelection.toLowerCase();
+console.log(computerSelection)
+console.log(playerSelection)
+function PlayRound(computerSelection, playerSelection){
+
+} 
