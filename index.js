@@ -18,36 +18,29 @@ function playRound(computerSelection, playerSelection){
     console.log(`your choice is ${playerSelection}`);
     if (playerSelection == computerSelection){
         console.log(`You both selected ${playerSelection}, hence, a tie`)
-        // return (`You both selected ${playerSelection}, hence, a tie`)
     } 
     else if (playerSelection == "rock"){
         if(computerSelection == "scissors"){
             console.log(`You win`)
-            // return("Great! you win since Rock smashes scissors")
         }
         else{
             console.log("Oops! Paper covers Rock, so you loose")
-            // return("Oops! Paper covers Rock, so you loose")
         }
     }
     else if (playerSelection == "paper"){
         if(computerSelection == "rock"){
             console.log("Great! Paper covers Rock, so you win. ")
-            // return("Great! Paper covers Rock, so you win. ")
         }
         else{
             console.log(`Oops! Scissors cuts paper, so you lose`)
-            //return("Oops! Scissors cuts paper, so you lose")
         }
     }
     else if (playerSelection == "scissors"){
         if(computerSelection == "paper"){
             console.log("Great! Scissors cuts Paper, so you win")
-            // return("Great! Scissors cuts Paper, so you win")
         }
         else{
             console.log("Oops! Rock smashes Scissors so you lose");
-            // return("Oops! Rock smashes Scissors so you lose")
         }
     }
 
