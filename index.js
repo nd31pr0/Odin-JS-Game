@@ -67,7 +67,7 @@ for (i of btns) {
                 let computerSelection = getComputerChoice(1,3);
                 let playerSelection = "scissors";
                 document.getElementById('result').innerText = playRound(computerSelection, playerSelection);
-            } else if (this === "btnp"){
+            } else if (this.id === "btnp"){
                 let computerSelection = getComputerChoice(1,3);
                 let playerSelection = "paper";
                 document.getElementById('result').innerText = playRound(computerSelection, playerSelection);
