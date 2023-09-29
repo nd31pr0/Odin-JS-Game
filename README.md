@@ -13,6 +13,7 @@ Important note: you want to return the results of this function call, not consol
 
 ## Sample Output
  ![SampleOutput](sample_output.png)
+ ![html_display_output](sample_output2.png)
 
 ## Authors
 
