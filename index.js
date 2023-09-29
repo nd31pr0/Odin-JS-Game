@@ -26,7 +26,7 @@ function playRound(playerSelection){
         compScore += 1;
         playerScore += 1;
         displayResult(compScore, playerScore)
-        if (playerScore === 5){
+        if (playerScore === 5 || compScore === 5){
             disableButtons();
         }
         return (`You both selected ${playerSelection}, hence, a tie`)
@@ -35,7 +35,7 @@ function playRound(playerSelection){
         if(computerSelection == "scissors"){
             playerScore += 1;
             displayResult(compScore, playerScore) 
-            if (playerScore === 5){
+            if (playerScore === 5 || compScore === 5){
                 disableButtons();
             }
             return (`You win! Rock covers scissors`)
@@ -43,7 +43,7 @@ function playRound(playerSelection){
         else{
             compScore += 1;
             displayResult(compScore, playerScore)
-            if (compScore === 5){
+            if (compScore === 5 || playerScore === 5){
                 disableButtons();
             }
             return ("Oops! Paper covers Rock, so you loose")
@@ -53,7 +53,7 @@ function playRound(playerSelection){
         if(computerSelection == "rock"){
             playerScore += 1;
             displayResult(compScore, playerScore)
-            if (playerScore === 5){
+            if (playerScore === 5 || compScore === 5){
                 disableButtons();
             }
 
@@ -62,7 +62,7 @@ function playRound(playerSelection){
         else{
             compScore += 1;
             displayResult(compScore, playerScore)
-            if (compScore === 5){
+            if (compScore === 5 || playerScore === 5){
                 disableButtons();
             }
             return (`Oops! Scissors cuts paper, so you lose`)
@@ -72,7 +72,7 @@ function playRound(playerSelection){
         if(computerSelection == "paper"){
             playerScore += 1;
             displayResult(compScore, playerScore)
-            if (playerScore === 5){
+            if (playerScore === 5 || compScore === 5){
                 disableButtons();
             }
             return ("Great! Scissors cuts Paper, so you win")
@@ -80,7 +80,7 @@ function playRound(playerSelection){
         else{
             compScore += 1;
             displayResult(compScore, playerScore)
-            if (compScore === 5){
+            if (compScore === 5 || playerScore === 5){
                 disableButtons();
             }
             return ("Oops! Rock smashes Scissors so you lose");
