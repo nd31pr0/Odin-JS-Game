@@ -4,6 +4,7 @@ let btns = document.querySelectorAll('button');
 let  playerSelection = "";
 let count = 0;
 
+// Get a random choice for the computer as its play
 function getComputerChoice(min, max) {
     let choice = Math.floor(Math.random() * (max - min + 1) + min);
     if (choice === 1){
@@ -17,6 +18,7 @@ function getComputerChoice(min, max) {
 
 }
 
+// gets a round of the game played
 function playRound(playerSelection){
     let computerSelection = getComputerChoice(1, 3)
     let result = "";
@@ -88,6 +90,8 @@ function playRound(playerSelection){
     }
 } 
 
+// Permit the user play the game n times. Not very useful in the current version 
+//of the game
 function game(n){
     
     for(let i = 0; i<n; i++){
@@ -99,7 +103,7 @@ function game(n){
     }
 }
 
-
+// Displays results on the web page
 function displayResult(compScore, playerScore){
     if (count == 0){
         const choice1 = document.createElement('h3');
@@ -118,13 +122,14 @@ function displayResult(compScore, playerScore){
     count += 1; 
 }
 
+// Permits us disable play after 5 rounds
 function disableButtons() {
     btns.forEach(btn => {
         btn.disabled = true
     })
 }
 
-
+// Triggers the playround with the user's selected choice
 for (i of btns) {
     i.addEventListener('click', function() {
         if (this.id === "btns"){
